@@ -17,7 +17,7 @@ const UpdateTaskModal = ({
   useEffect(() => {
     const getSingleTask = async () => {
       await axios
-        .get(`https://task-management-backend-wine.vercel.app/task/single/${id}`, {
+        .get(`https://task-manager-1-k0qr.onrender.com/api/v1/task/single/${id}`, {
           withCredentials: true,
         })
         .then((res) => {
@@ -38,7 +38,7 @@ const UpdateTaskModal = ({
   const handleUpdateTask = async () => {
     await axios
       .put(
-        `http://localhost:4000/api/v1/task/update/${id}`,
+        `https://task-manager-1-k0qr.onrender.com/api/v1/task/update/${id}`,
         {
           title,
           description,
