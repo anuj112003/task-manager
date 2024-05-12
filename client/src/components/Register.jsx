@@ -27,7 +27,7 @@ function Register({ isAuthenticated, setIsAuthenticated }) {
     formData.append("password", password);
     formData.append("avatar", avatar);
     await axios
-      .post("https://task-manager-1-k0qr.onrender.com/api/v1/user/register", formData, {
+      .post("https://task-manager-2-e0ja.onrender.com/api/v1/user/register", formData, {
         withCredentials: true,
         headers: { "Content-Type": "multipart/form-data" },
       })
