@@ -18,7 +18,7 @@ const Home = ({ isAuthenticated, tasks, setTasks, taskTitle }) => {
 
   const deleteTask = async (id) => {
     await axios
-      .delete(`https://task-manager-1-k0qr.onrender.com/api/v1/task/delete/${id}`, {
+      .delete(`https://task-manager-2-e0ja.onrender.com/api/v1/task/delete/${id}`, {
         withCredentials: true,
       })
       .then((res) => {
