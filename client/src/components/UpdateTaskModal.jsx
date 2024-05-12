@@ -17,7 +17,7 @@ const UpdateTaskModal = ({
   useEffect(() => {
     const getSingleTask = async () => {
       await axios
-        .get(`https://task-manager-1-k0qr.onrender.com/api/v1/task/single/${id}`, {
+        .get(`https://task-manager-2-e0ja.onrender.com/api/v1/task/single/${id}`, {
           withCredentials: true,
         })
         .then((res) => {
@@ -38,7 +38,7 @@ const UpdateTaskModal = ({
   const handleUpdateTask = async () => {
     await axios
       .put(
-        `https://task-manager-1-k0qr.onrender.com/api/v1/task/update/${id}`,
+        `https://task-manager-2-e0ja.onrender.com/api/v1/task/update/${id}`,
         {
           title,
           description,
